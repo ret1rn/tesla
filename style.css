@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-car {
+    width: 940px;
+    height: 497px;
+    background-image: url(https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTS13,$PPSW,$WS91,$IBE00&view=SIDE&model=ms&size=1920&bkba_opt=2&crop=0,0,0,0&);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 1;
+    transition: .5s ease;
+}
+
+.back19 {
+    background-image: url(https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTS13,$PPSW,$WS91,$IBE00&view=SIDE&model=ms&size=1920&bkba_opt=2&crop=0,0,0,0&);
+}
+
+.back21 {
+    background-image: url(https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTS13,$PPSW,$WS11,$IBE00&view=SIDE&model=ms&size=1920&bkba_opt=2&crop=0,0,0,0&);
+}
+
+.values {
+    display: flex;
+    gap: 117px;
+    padding: 35px;
+}
+
+.values span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #707070;
+}
+
+.values p {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 79px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 54px;
+}
+
+.detail-header {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #707070;
+}
+
+.details p {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.speed, .temperature, .tire {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.icons img {
+    height: 20px;
+    width: 20px;
+}
+
+.switch {
+    margin-top: 8px;
+    width: 39px;
+    height: 25px;
+    padding: 2px;
+    background-color: gray;
+    border-radius: 18px;
+    position: relative;
+}
+
+.switch::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: 2.4px;
+    left: 2px;
+}
+
+.switch_active {
+    margin-top: 8px;
+    width: 39px;
+    height: 25px;
+    padding: 2px;
+    background-color: blue;
+    border-radius: 18px;
+    position: relative;
+}
+
+.switch_active::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: 2.4px;
+    left: 17px;
+}
+
+.switch, .switch::before, .switch_active, .switch_active::before, #disk {
+    transition: 0.2s ease;
+}

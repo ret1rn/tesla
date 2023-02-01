@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <title>Tesla beta website</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img-car"></div>
+        <div class="values">
+            <div class="move">
+                <span>Запас хода</span>
+                <p id="km">750км</p>
+            </div>
+            <div class="total">
+                <span>Цена</span>
+                <p id="price">$89,990</p>
+            </div>
+        </div>
+        <div class="details">
+            <div class="speed">
+                <p>
+                    <span class="detail-header">Скорость автомобиля</span>
+                    <span id="speed">60</span> км/ч
+                </p>
+                <div class="icons">
+                    <img src="./img/up.png" alt="up">
+                    <img src="./img/down.png" alt="down">
+                </div>
+            </div>
+            <div class="temperature">
+                <p>
+                    <span class="detail-header">Температура за окнами</span>
+                    <span id="temp">20</span>°
+                </p>
+                <div class="icons">
+                    <img src="./img/up.png" alt="up">
+                    <img src="./img/down.png" alt="down">
+                </div>
+            </div>
+            <div class="tire">
+                <p>
+                    <span class="detail-header">Диски</span>
+                    <span id="disk">19</span>
+                </p>
+                <div class="icons">
+                    <img src="./img/up.png" alt="up">
+                    <img src="./img/down.png" alt="down">
+                </div>
+            </div>
+            <div class="conditioner">
+                <span class="detail-header">Кондиционер</span>
+                <div class type-switch="0" data-turn="off"></div>
+            </div>
+            <div class="version">
+                <span class="detail-header">Версия Long Range</span>
+                <div class type-switch="1" data-turn="off"></div>
+            </div>
+            <div class="look">
+                <span class="detail-header">Вид автомобиля</span>
+                <div class type-switch="2" data-turn="on"></div>
+            </div>
+
+            
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
